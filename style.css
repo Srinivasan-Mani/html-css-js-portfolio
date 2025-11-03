@@ -530,28 +530,54 @@ article .icon {
 
 #projects {
   position: relative;
+  padding: 6rem 0;
+}
+
+#projects .about-containers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  background: rgba(10, 25, 47, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.color-container:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-blue);
+  box-shadow: 0 12px 30px rgba(100, 255, 218, 0.15);
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 0.8rem;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.project-img:hover {
+  transform: scale(1.02);
 }
 
 .project-title {
-  margin: 1rem;
-  color: black;
+  margin: 1.5rem 0;
+  color: var(--accent-blue);
+  font-size: 1.8rem;
+  text-align: center;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
+
 
 /* CONTACT */
 
