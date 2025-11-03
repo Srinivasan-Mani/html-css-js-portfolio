@@ -530,15 +530,18 @@ article .icon {
 
 #projects {
   position: relative;
-  padding: 6rem 0;
+  padding: 4rem 0 6rem;
+  height: auto;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 
 #projects .about-containers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
-  padding: 0 2rem;
-  max-width: 1400px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 3rem;
+  padding: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -547,8 +550,10 @@ article .icon {
   background: rgba(10, 25, 47, 0.7);
   backdrop-filter: blur(10px);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .color-container:hover {
@@ -560,7 +565,7 @@ article .icon {
 .project-img {
   border-radius: 0.8rem;
   width: 100%;
-  height: 300px;
+  height: 280px;
   object-fit: cover;
   transition: transform 0.3s ease;
   border: 1px solid rgba(100, 255, 218, 0.1);
@@ -571,10 +576,24 @@ article .icon {
 }
 
 .project-title {
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 1rem;
   color: var(--accent-blue);
   font-size: 1.8rem;
   text-align: center;
+}
+
+.project-description {
+  text-align: center;
+  color: var(--light-text);
+  opacity: 0.8;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.color-container:hover .project-description {
+  opacity: 1;
 }
 
 

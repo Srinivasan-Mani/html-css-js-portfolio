@@ -45,6 +45,14 @@
   .about-containers {
     margin-top: 0;
   }
+  #projects .about-containers {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 3rem;
+  }
+  .project-img {
+    height: 250px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -95,5 +103,12 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .project-img {
+    height: 200px;
+  }
+  #projects .about-containers {
+    padding: 0.5rem;
+    gap: 2rem;
   }
 }
