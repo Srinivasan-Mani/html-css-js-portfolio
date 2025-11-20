@@ -3,9 +3,11 @@
     height: 83vh;
     margin-bottom: 6rem;
   }
+
   .about-containers {
     flex-wrap: wrap;
   }
+
   #contact,
   #projects {
     height: fit-content;
@@ -16,55 +18,69 @@
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
     display: flex;
   }
+
   #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
+
   .experience-details-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .about-containers {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
   }
+
   .article-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    justify-items: center;
   }
+
   #profile,
   .section-container {
     display: block;
   }
+
   .arrow {
     display: none;
   }
+
   section,
   .section-container {
     height: fit-content;
   }
+
   section {
     margin: 0 5%;
   }
+
   .section__pic-container {
     width: min(275px, 80vw);
     height: min(275px, 80vw);
     margin: 0 auto 2rem;
   }
+
   .about-containers {
     margin-top: 0;
   }
+
   #projects .about-containers {
     grid-template-columns: 1fr;
     padding: 1rem;
     gap: 3rem;
   }
+
   .project-img {
     max-height: 300px;
   }
@@ -74,70 +90,88 @@
   #contact {
     height: 40vh;
   }
+
   #profile {
     height: 83vh;
     margin-bottom: 0;
   }
+
   article {
     font-size: 1rem;
     width: 100%;
     margin: 0.5rem 0;
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
+
   .article-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.5rem;
+    justify-items: center;
   }
+
   .details-container {
     padding: 1.5rem;
     width: 100%;
   }
+
   #experience .about-containers {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
   }
+
   .contact-info-container {
     margin: 0;
   }
+
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
   }
+
   .experience-sub-title {
     font-size: 1.25rem;
   }
+
   .logo {
     font-size: 1.5rem;
   }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
+
   .section__pic-container {
     width: min(280px, 75vw);
     height: min(280px, 75vw);
     justify-content: center;
     margin: 1rem auto;
   }
+
   .section__text__p2 {
     font-size: 1.25rem;
   }
+
   .title {
     font-size: 2rem;
   }
+
   .text-container {
     text-align: justify;
   }
+
   .project-img {
     height: 200px;
   }
+
   #projects .about-containers {
     padding: 0.5rem;
     gap: 2rem;
